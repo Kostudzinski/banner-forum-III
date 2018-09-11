@@ -44,7 +44,7 @@
             background-size: 105%;
             filter: saturate(1.3);
             opacity: 1;
-            animation: photocx 3s linear .5s forwards;
+            animation: photocx 3s linear .5s forwards, photoscx 2s ease-in-out 4s infinite;
         }
         
         .shadow-1-cx {
@@ -86,7 +86,7 @@
         .button-cx {
             background-image: url(img-cx/button-b-cx.png);
             width: 0px;
-            animation: widecx 1s ease-in-out 2s forwards;
+            animation: widecx 1s ease-in-out 2s forwards, buttoncx 2s ease-in-out 4s infinite;
         }
         
         .button-arrow-cx {
@@ -149,6 +149,32 @@
             0% {
                 opacity: 1;
             }
+            100% {
+                opacity: .3;
+            }
+        }
+        
+        @keyframes buttoncx {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .9;
+            }
+            
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes photoscx {
+            0% {
+                opacity: .3;
+            }
+            50% {
+                opacity: .5;
+            }
+            
             100% {
                 opacity: .3;
             }
