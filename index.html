@@ -105,22 +105,40 @@
         
         .square-cx {
             width: 800px;
-            height: 825px;
+            height: 1000px;
             transform: rotate(-30deg);
             background-color: #fff;
             position: absolute;
-            bottom: -200px;
+            bottom: -280px;
             right: 20px;
-            animation: squarecx 1s ease-in-out 0s forwards;
+            animation: squarecx 1s ease-in-out 0s forwards, squarecx2 15s ease-in-out 10s infinite;
         }
         
-        .banner-cx:hover .button-arrow-cx{
+        .banner-cx:hover .button-arrow-cx {
             right: -5px;
         }
         
         @keyframes squarecx {
             0% {
                 right: 20px;
+            }
+            100% {
+                right: -800px;
+            }
+        }
+        
+        @keyframes squarecx2 {
+            0% {
+                right: -800px;
+            }
+            5% {
+                right: 1000px;
+            }
+            50% {
+                right: 1000px;
+            }
+            55% {
+                right: -800px;
             }
             100% {
                 right: -800px;
@@ -161,7 +179,6 @@
             50% {
                 opacity: .9;
             }
-            
             100% {
                 opacity: 1;
             }
@@ -174,7 +191,6 @@
             50% {
                 opacity: .5;
             }
-            
             100% {
                 opacity: .3;
             }
