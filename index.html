@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Banner-III-forum</title>
+</head>
+
+<body>
+    <div class="banner-cx banner-main-cx">
+        <a href="https://3-forumdruku3d.evenea.pl/">
+            <div class="banner-cx photo-cx"></div>
+            <div class="banner-cx shadow-1-cx"></div>
+            <div class="banner-cx shadow-2-cx"></div>
+            <div class="banner-cx shadow-3-cx"></div>
+            <div class="banner-cx shadow-4-cx"></div>
+            <div class="square-cx"></div>
+            <div class="banner-cx txt-cx"></div>
+            <div class="banner-cx logo-cx"></div>
+            <div class="banner-cx button-cx"></div>
+            <div class="banner-cx button-txt-cx">
+                <div class="banner-cx button-arrow-cx"></div>
+            </div>
+        </a>
+    </div>
+    <style>
+        .banner-cx {
+            width: 750px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            transition: 1s;
+        }
+        
+        .banner-main-cx {
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .photo-cx {
+            background-image: url(img-cx/Photo-cx.png);
+            background-position: center;
+            background-size: 105%;
+            filter: saturate(1.3);
+            opacity: 1;
+            animation: photocx 3s linear .5s forwards;
+        }
+        
+        .shadow-1-cx {
+            background-image: url(img-cx/shadow-1-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out .6s forwards;
+        }
+        
+        .shadow-2-cx {
+            background-image: url(img-cx/shadow-2-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out 1s forwards;
+        }
+        
+        .shadow-3-cx {
+            background-image: url(img-cx/shadow-3-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out 1.4s forwards;
+        }
+        
+        .shadow-4-cx {
+            background-image: url(img-cx/shadow-4l-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out 1.7s forwards;
+        }
+        
+        .txt-cx {
+            background-image: url(img-cx/txt-cx.png);
+            width: 0px;
+            animation: widecx 1s ease-in-out 0s forwards;
+        }
+        
+        .logo-cx {
+            background-image: url(img-cx/logo-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out 2s forwards;
+        }
+        
+        .button-cx {
+            background-image: url(img-cx/button-b-cx.png);
+            width: 0px;
+            animation: widecx 1s ease-in-out 2s forwards;
+        }
+        
+        .button-arrow-cx {
+            background-image: url(img-cx/button-ar-cx.png);
+            opacity: 0;
+            animation: showcx 1s ease-in-out 2.5s forwards;
+            right: 10px;
+            transition: .5s;
+        }
+        
+        .button-txt-cx {
+            background-image: url(img-cx/button-tx-cx.png);
+            width: 0px;
+            animation: widecx 1s ease-in-out 2.6s forwards;
+        }
+        
+        .square-cx {
+            width: 800px;
+            height: 825px;
+            transform: rotate(-30deg);
+            background-color: #fff;
+            position: absolute;
+            bottom: -200px;
+            right: 20px;
+            animation: squarecx 1s ease-in-out 0s forwards;
+        }
+        
+        .banner-cx:hover .button-arrow-cx{
+            right: -5px;
+        }
+        
+        @keyframes squarecx {
+            0% {
+                right: 20px;
+            }
+            100% {
+                right: -800px;
+            }
+        }
+        
+        @keyframes widecx {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 750px;
+            }
+        }
+        
+        @keyframes showcx {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes photocx {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: .3;
+            }
+        }
+    </style>
+</body>
+
+</html>
